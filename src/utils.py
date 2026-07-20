@@ -86,3 +86,48 @@ def generate_longitudes(size):
         size
     ).round(6)
 
+#SUMMARY
+def summarize_dataset(name, df):
+
+    print("=" * 80)
+
+    print(name.upper())
+
+    print("=" * 80)
+
+    print(f"Rows    : {df.shape[0]:,}")
+
+    print(f"Columns : {df.shape[1]}")
+
+    print(f"Missing : {df.isna().sum().sum():,}")
+
+    print(f"Duplicates : {df.duplicated().sum():,}")
+
+    print()
+
+#LOGGER
+def log_transformation(message):
+
+    print(f"[INFO] {message}")
+
+#VALUE COUNT
+def compare_before_after(before, after, column):
+
+    comparison = pd.DataFrame({
+
+        "Before": before[column].value_counts(),
+
+        "After": after[column].value_counts()
+
+    })
+
+    return comparison.fillna(0)
+
+#UNIQUE VALUE
+def unique_count(df):
+
+    return pd.DataFrame({
+
+        "Unique Values": df.nunique()
+
+    })
