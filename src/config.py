@@ -4,9 +4,9 @@ Global configuration for the Moroccan E-Commerce Data Platform.
 
 from pathlib import Path
 
-# ============================================================
+
 # PROJECT PATHS
-# ============================================================
+
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 
@@ -18,9 +18,9 @@ ASSETS = PROJECT_ROOT / "assets"
 
 LOGS = PROJECT_ROOT / "logs"
 
-# ============================================================
+
 # FILE NAMES
-# ============================================================
+
 
 CUSTOMERS_FILE = "olist_customers_dataset.csv"
 ORDERS_FILE = "olist_orders_dataset.csv"
@@ -32,9 +32,9 @@ REVIEWS_FILE = "olist_order_reviews_dataset.csv"
 GEOLOCATION_FILE = "olist_geolocation_dataset.csv"
 CATEGORY_TRANSLATION_FILE = "product_category_name_translation.csv"
 
-# ============================================================
+
 # OUTPUT FILES
-# ============================================================
+
 
 OUTPUT_CUSTOMERS = "customers.csv"
 OUTPUT_ORDERS = "orders.csv"
@@ -46,9 +46,9 @@ OUTPUT_REVIEWS = "reviews.csv"
 OUTPUT_GEOLOCATION = "geolocation.csv"
 OUTPUT_CATEGORIES = "categories.csv"
 
-# ============================================================
+
 # MOROCCANIZATION SETTINGS
-# ============================================================
+
 
 # Fixed exchange rate used throughout the project
 BRL_TO_MAD = 2.10
