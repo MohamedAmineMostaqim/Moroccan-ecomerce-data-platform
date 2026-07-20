@@ -20,11 +20,6 @@ __pycache__/
 # Logs
 *.log
 
-# Data outputs
-data/processed/
-data/interim/
-data/warehouse/
-
 # Python build
 build/
 dist/
