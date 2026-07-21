@@ -1,4 +1,4 @@
-# Data Quality Report
+# Data Profiling & Quality Report
 
 ## Project
 
